@@ -5,21 +5,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logoBibi from "./logo.png";
 
 function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch("/api/date");
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+  
   return (
     <>
       <Router>
         <main>
           <div>
-            <img src={logoBibi} width="150px" className="logo" />
+            <img src={logoBibi} alt="logo bibi mototaxi" width="150px" className="logo" />
             <nav>
               <div>
                 <Link to="/">Inicio</Link>
