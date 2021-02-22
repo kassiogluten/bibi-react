@@ -58,10 +58,10 @@ function Inicio() {
   return (
     <div>
       <p>Formas de atendimento:</p>
-      <a target="_blank" href="https://instagram.com/bibi.mototaxi">
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/bibi.mototaxi">
         Instagram
       </a>
-      <a target="_blank" href="mailto:kassiogluten@gmail.com">
+      <a target="_blank" rel="noopener noreferrer" href="mailto:kassiogluten@gmail.com">
         E-mail
       </a>
     </div>
