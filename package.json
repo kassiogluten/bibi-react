@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.1"
   },
   "scripts": {
@@ -18,5 +19,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.17"
+  }
 }

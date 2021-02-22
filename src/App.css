@@ -1,19 +1,36 @@
+body {
+  background-color: #31373f;
+}
 main {
-  align-content: center;
+  justify-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
   max-width: 680px;
   min-height: 100vh;
-  padding: 72px 0;
+  padding: 20px;
   text-align: center;
+}
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.logo {
+  object-fit: contain;
+  justify-self: center;
+  margin: 20px;
+}
+nav div {
+  padding: 10px;
 }
 h1 {
   font-size: 45px;
+  color: white;
 }
 h2 {
   margin-top: 1.5em;
@@ -22,15 +39,18 @@ p {
   font-size: 16px;
 }
 a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
+  border: 1px solid #f70;
+  border-radius: 7px;
+  padding: 7px 10px;
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.7s ease;
 }
 a:hover {
-  border-bottom: 1px solid #0076ff;
+  background-color: #f70;
 }
+
 code,
 pre {
   color: #d400ff;
@@ -40,5 +60,5 @@ pre {
 }
 code:before,
 code:after {
-  content: '\`';
+  content: "\`";
 }
