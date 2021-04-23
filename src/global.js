@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 
 :root{
   --secundariaCinza:#39404A;
+  --terciariaCinza:#292E34;
   --branco:#ffffff;
   --laranja:#F89938;
 }
