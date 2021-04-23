@@ -1,18 +1,11 @@
-import react, { useRef, useState } from "react";
+import { useState } from "react";
 import { ImMenu3 } from "react-icons/im";
 import logoImg from "../../assets/logo.svg";
 import appStoreImg from "../../assets/appstore.png";
 import playStoreImg from "../../assets/playstore.png";
-import previewAppImg from "../../assets/previewAppImg.png";
+
 import Gradient from "rgt";
-import {
-  Container,
-  Menu,
-  Navigation,
-  HeroSection,
-  boxTexto,
-  boxImagem,
-} from "./styles";
+import { Container, Menu, Navigation, HeroSection } from "./styles";
 
 export function Header() {
   const [menuMobile, setMenuMobile] = useState(false);
@@ -22,22 +15,22 @@ export function Header() {
         <img src={logoImg} alt="Logo Bibi Mototaxi" />
         <Menu className={menuMobile && "active"}>
           <li>
-            <a href="#">Como funciona</a>
+            <a href="#asd">Como funciona</a>
           </li>
           <li>
-            <a href="#">Benefícios</a>
+            <a href="#asd">Benefícios</a>
           </li>
           <li>
-            <a href="#">Cidades</a>
+            <a href="#asd">Cidades</a>
           </li>
           <li>
-            <a href="#">Indique e ganhe</a>
+            <a href="#asd">Indique e ganhe</a>
           </li>
           <li>
-            <a href="#">Baixar App</a>
+            <a href="#asd">Baixar App</a>
           </li>
           <li>
-            <a href="#">Perguntas frequentes</a>
+            <a href="#asd">Perguntas frequentes</a>
           </li>
         </Menu>
 
@@ -70,7 +63,7 @@ export function Header() {
           <img src={playStoreImg} alt="Bibi Play Store" />
         </div>
         <div className="boxImagem">
-          <img src={previewAppImg} alt="App Bibi" />
+          {/* <img src={previewAppImg} alt="App Bibi" /> */}
         </div>
       </HeroSection>
     </Container>

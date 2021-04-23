@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import previewAppImg from "../../assets/previewAppImg.png";
 
 export const Container = styled.div`
   background: linear-gradient(324.28deg, #31373f 20.91%, #292e34 79.09%);
@@ -132,7 +133,9 @@ export const HeroSection = styled.div`
     }
   }
   .boxImagem {
-    width: 50%;
+    background-image: url(${previewAppImg});
+    height:800px;
+    width:50%;
   }
 `;
 //export const boxTexto = styled.div``;
