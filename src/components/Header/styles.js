@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-position: absolute;
+  position: absolute;
   //background: linear-gradient(324.28deg, #31373f 20.91%, #292e34 79.09%);
   width: 100%;
   overflow-x: hidden;
@@ -66,17 +66,20 @@ export const Menu = styled.ul`
     padding: 1rem 0;
     position: fixed;
     left: 50%;
-    top: 2rem;
-    background-color: var(--laranja);
+    top:0;
+    background-color: rgba(41, 46, 52, 0.75);
+    backdrop-filter: blur(10px);
     transform: translateX(-50%);
-    //height:90vh;
-    width: 90vw;
+    height:100vh;
+    width: 100vw;
+    //height: calc(95vh - 140px);
     border-radius: 10px;
     opacity: 0;
     /* display: none; */
     /* visibility: hidden; */
     transform: translateX(100%);
     transition: transform 200ms ease-in;
+    z-index: 10;
 
     &.active {
       opacity: 1;
@@ -90,9 +93,11 @@ export const Menu = styled.ul`
       a {
         display: block;
         padding: 20px;
+        font-size:1rem;
+        font-weight:600;
 
         &:hover {
-          color: var(--secundariaCinza);
+          color: var(--laranja);
           border-radius: 10px;
         }
       }
@@ -102,5 +107,3 @@ export const Menu = styled.ul`
     }
   }
 `;
-
-

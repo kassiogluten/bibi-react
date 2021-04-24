@@ -85,8 +85,8 @@ export function Home() {
                 Quem vai de Bibi tem um time completo:{" "}
                 <strong>fácil, rápido, seguro e econômico.</strong>
               </h1>
-              <Line className="linha2"/>
-              <Line className="linha3"/>
+              <Line className="linha2" />
+              <Line className="linha3" />
             </Col1>
             <Col2 />
           </ColContainer>

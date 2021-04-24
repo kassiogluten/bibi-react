@@ -8,10 +8,13 @@ export function Header() {
   const [menuMobile, setMenuMobile] = useState(false);
   return (
     <>
-      <HeaderContainer onClick={() => menuMobile && setMenuMobile(false)}>
+      <HeaderContainer>
         <HeaderNav>
           <img src={logoImg} alt="Logo Bibi Mototaxi" />
-          <Menu className={menuMobile && "active"}>
+          <Menu
+            onClick={() => menuMobile && setMenuMobile(false)}
+            className={menuMobile && "active"}
+          >
             <li>
               <a href="#asd">Como funciona</a>
             </li>
