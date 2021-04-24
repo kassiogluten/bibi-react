@@ -220,7 +220,7 @@ export const Col1 = styled.div`
       display: none;
     }
   }
-  )
+  
   @media (max-width: 700px) {
     width: 100%;
   }
@@ -240,6 +240,6 @@ export const Col2 = styled.div`
     width: 100%;
     height: 600px;
     background-position: 50%;
-    background-size: 140%;
+    background-size: 180%;
   }
 `;
