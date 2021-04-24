@@ -79,13 +79,16 @@ export function Home() {
           <ColContainer>
             <Col1>
               <Line />
+              <Line />
               <h4>Por que usar Bibi Mototáxi?</h4>
               <h1>
                 Quem vai de Bibi tem um time completo:{" "}
                 <strong>fácil, rápido, seguro e econômico.</strong>
               </h1>
+              <Line className="linha2"/>
+              <Line className="linha3"/>
             </Col1>
-            <Col2/>
+            <Col2 />
           </ColContainer>
         </MainContent>
       </MainContainer>

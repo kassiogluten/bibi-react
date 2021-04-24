@@ -177,6 +177,7 @@ export const ColContainer = styled.div`
 `;
 
 export const Col1 = styled.div`
+  position: relative;
   width: 45%;
 
   h1,
@@ -186,19 +187,40 @@ export const Col1 = styled.div`
 
   h4 {
     font-size: 0.75rem;
-    font-weight:400;
+    font-weight: 400;
     margin: 0.5rem 0;
   }
 
   h1 {
+    position: relative;
     margin: 2rem 90px 0 0;
-    font-weight:400;
+    font-weight: 400;
+    z-index: 2;
 
-    strong{
-      font-weight:700;
+    strong {
+      font-weight: 700;
     }
   }
 
+  .linha2 {
+    height: 18px;
+    width: 205px;
+    right: 100px;
+    bottom: 35px;
+  }
+  .linha3 {
+    height: 18px;
+    width: 335px;
+    left: -5px;
+    bottom: -3px;
+  }
+  @media (max-width: 1200px) {
+    .linha2,
+    .linha3 {
+      display: none;
+    }
+  }
+  )
   @media (max-width: 700px) {
     width: 100%;
   }
