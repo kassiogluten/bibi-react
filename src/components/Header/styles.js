@@ -43,6 +43,9 @@ export const HeaderNav = styled.div`
 `;
 
 export const Menu = styled.ul`
+  position: relative;
+  
+  
   list-style: none;
 
   li {
@@ -63,29 +66,30 @@ export const Menu = styled.ul`
   }
 
   @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem 0;
     position: fixed;
-    left: 50%;
-    top:0;
+    left: -100vw;
+    top: 0;
     background-color: rgba(41, 46, 52, 0.75);
     backdrop-filter: blur(10px);
-    transform: translateX(-50%);
-    height:100vh;
+    height: 100vh;
     width: 100vw;
     //height: calc(95vh - 140px);
     border-radius: 10px;
     opacity: 0;
     /* display: none; */
     /* visibility: hidden; */
-    transform: translateX(100%);
-    transition: transform 200ms ease-in;
+    transition: opacity 350ms ease;
     z-index: 10;
 
     &.active {
       opacity: 1;
+      left: 0;
       /* display: block; */
       /* visibility:visible; */
-      transform: translateX(-50%);
     }
 
     li {
@@ -93,8 +97,8 @@ export const Menu = styled.ul`
       a {
         display: block;
         padding: 20px;
-        font-size:1rem;
-        font-weight:600;
+        font-size: 1rem;
+        font-weight: 600;
 
         &:hover {
           color: var(--laranja);
