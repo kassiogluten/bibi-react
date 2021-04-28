@@ -44,8 +44,7 @@ export const HeaderNav = styled.div`
 
 export const Menu = styled.ul`
   position: relative;
-  
-  
+
   list-style: none;
 
   li {

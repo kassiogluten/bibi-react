@@ -1,6 +1,10 @@
 import appStoreImg from "../../assets/appstore.png";
 import playStoreImg from "../../assets/playstore.png";
 
+
+import Tilt from "react-parallax-tilt";
+
+
 import Gradient from "rgt";
 import {
   HeroSection,
@@ -47,7 +51,7 @@ export function Home() {
           <Line />
           <h2>Como funciona?</h2>
           <Boxes>
-            <Box>
+            <Box as={Tilt} glareEnable={true} glareBorderRadius={"20px"} glarePosition="top" tiltMaxAngleX={10} tiltMaxAngleY={5} glareMaxOpacity={0.1}>
               <div className="number">01</div>
               <p>Baixe nosso app</p>
               <span>
@@ -56,7 +60,7 @@ export function Home() {
                 (Android) ou na App Store (iOS).
               </span>
             </Box>
-            <Box>
+            <Box as={Tilt} glareEnable={true} glareBorderRadius={"20px"} glarePosition="top" tiltMaxAngleX={5} tiltMaxAngleY={5} glareMaxOpacity={0.1}>
               <div className="number">02</div>
               <p>Faça seu cadastro</p>
               <span>
@@ -65,7 +69,7 @@ export function Home() {
                 Google (Android) ou Apple (iOS).
               </span>
             </Box>
-            <Box>
+            <Box as={Tilt} glareEnable={true} glareBorderRadius={"20px"} glarePosition="top" tiltMaxAngleX={5} tiltMaxAngleY={5} glareMaxOpacity={0.1}>
               <div className="number">03</div>
               <p>Pronto! Agora é só curtir</p>
               <span>

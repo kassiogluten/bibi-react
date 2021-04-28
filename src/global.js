@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   --branco:#ffffff;
   --laranja:#F89938;
 }
+
 
 *{
   margin: 0;
@@ -44,4 +45,4 @@ body {
   }
 
   
-  `
+  `;

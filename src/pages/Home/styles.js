@@ -220,7 +220,7 @@ export const Col1 = styled.div`
       display: none;
     }
   }
-  
+
   @media (max-width: 700px) {
     width: 100%;
   }
